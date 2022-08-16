@@ -1,0 +1,174 @@
+body{
+    padding: 0;
+    margin: 0;
+    background:#000000;
+    background-image: linear-gradient(#313131 50%, #9e9e9e);
+    text-align: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+h1 {
+    color:#fff;
+    font-family: 'Lato';
+    font-weight:100;
+    padding:30px;
+    display:block;
+}
+a{
+    color:#fff;
+    padding:30px;
+    display:block;
+    text-decoration: none;
+    font-size: 14;
+}
+.wrapper{
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform:translate(-50%, -20%);
+}
+.wrapper .icon{
+    margin:20px;
+}
+
+
+/* nav-icon-1 */
+.nav-icon-1{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: .1s;
+    margin: 10px 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.nav-icon-1 span{
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+.nav-icon-1:hover span{
+    transform: scale(1.2);
+    transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-1 span:nth-child(1){
+    left: 0;
+    top: 0;
+}
+.nav-icon-1 span:nth-child(2){
+    left: 12px;
+    top: 0;
+}
+.nav-icon-1 span:nth-child(3){
+    right: 0;
+    top: 0;
+}
+.nav-icon-1 span:nth-child(4){
+    left: 0;
+    top: 12px;
+}
+.nav-icon-1 span:nth-child(5){
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+.nav-icon-1 span:nth-child(6){
+    right: 0px;
+    top: 12px;
+}
+.nav-icon-1 span:nth-child(7){
+    left: 0px;
+    bottom: 0px;
+}
+.nav-icon-1 span:nth-child(8){
+    position: absolute;
+    left: 12px;
+    bottom: 0px;
+}
+.nav-icon-1 span:nth-child(9){
+    right: 0px;
+    bottom: 0px;
+}
+.nav-icon-1.open{
+    transform: rotate(180deg);
+    cursor: pointer;
+    transition: .2s cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-1.open span{
+    border-radius: 50%;
+    transition-delay: 200ms;
+    transition: .5s cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-1.open span:nth-child(2) {
+    left: 6px;
+    top: 6px;
+}
+.nav-icon-1.open span:nth-child(4) {
+    left: 6px;
+    top: 18px;
+}
+.nav-icon-1.open span:nth-child(6) {
+    right: 6px;
+    top: 6px;
+}
+.nav-icon-1.open span:nth-child(8) {
+    left: 18px;
+    bottom: 6px;
+}
+
+/* nav-icon-2 */
+.nav-icon-2{
+    width: 35px;
+    height: 30px;
+    margin: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+.nav-icon-2 span{
+    background-color:#fff;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width:100%;
+    height: 4px;
+    transition-duration: 500ms
+}
+.nav-icon-2 span:nth-child(1){
+    top:0px;
+    left: 0px;
+}
+.nav-icon-2 span:nth-child(2){
+    top:13px;
+    left: 0px;
+    opacity:1;
+}
+.nav-icon-2 span:nth-child(3){
+    bottom:0px;
+    left: 0px;
+}
+.nav-icon-2:not(.open):hover span:nth-child(1){
+    transform: rotate(-3deg) scaleY(1.1);
+}
+.nav-icon-2:not(.open):hover span:nth-child(2){
+    transform: rotate(3deg) scaleY(1.1);
+}
+.nav-icon-2:not(.open):hover span:nth-child(3){
+    transform: rotate(-4deg) scaleY(1.1);
+}
+.nav-icon-2.open span:nth-child(1){
+    transform: rotate(45deg);
+    top: 13px;
+}
+.nav-icon-2.open span:nth-child(2){
+    opacity:0;
+}
+.nav-icon-2.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 13px;
+}
